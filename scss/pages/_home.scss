@@ -5,7 +5,48 @@
     line-height: 1.6;
     color: #ffffff;
   }
-  
+  &__block01{
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 60px;
+      }
+    }
+    &__title{
+      text-transform: uppercase;
+      @extend .fz-30;
+      margin: 0;
+      font-family: $font-Roboto;
+    }
+    &__txt{
+      @extend .fz-18;
+      line-height: 1.2;
+      color: #ffffff;
+      font-family: $font-Roboto;
+    }
+    &__list{
+      margin-top: 25px;
+      >li{
+        @extend .fz-16;
+        color: #ffffff;
+        font-family: $font-Roboto;
+        padding-left: 25px;
+        position: relative;
+        &:before{
+          content: "";
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 4px;
+          left: 0;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%201792%201896.0833%22%20fill%3D%22rgba(241%2C%2014%2C%201%2C%201)%22%3E%20%3Cpath%20d%3D%22M1671%20566q0%2040-28%2068l-724%20724-136%20136q-28%2028-68%2028t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28%2068-28t68%2028l294%20295%20656-657q28-28%2068-28t68%2028l136%20136q28%2028%2028%2068z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
+        }
+      }
+    }
+  }
   &__blockSanpham{
     &__item{
       &:nth-child(n+2){

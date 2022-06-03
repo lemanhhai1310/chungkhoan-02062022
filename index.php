@@ -1,20 +1,46 @@
 <?php $data["title"] = "Trang chủ"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<!---->
+<!--THÀNH TÍCH NỔI BẬT-->
 <div class="uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
     <div class="uk-container">
-        <div class="uk-flex-middle" uk-grid>
-            <div class="uk-width-expand">
 
+    </div>
+</div>
+<!--/THÀNH TÍCH NỔI BẬT-->
+
+<!--TCWEALTH-->
+<div class="home__block01 uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
+    <div class="uk-container">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-2-5@m">
+                <div class="home__block01__item">
+                    <h3 class="uk-h3 home__block01__title">TCWEALTH</h3>
+                    <div class="home__block01__txt">Robo Advisor đầu tiên được phát triển tại Việt Nam</div>
+                    <ul class="uk-list home__block01__list">
+                        <li>Công cụ online tư vấn tài chính cá nhân.</li>
+                        <li>Mô tả dòng tiền chi tiết, đưa ra bức tranh tài chính toàn cảnh của mỗi cá nhân.</li>
+                        <li>Hỗ trợ người dùng lên kế hoạch đầu tư phù hợp với từng mục tiêu cụ thể trong tương lai.</li>
+                        <li>Thông minh, chuyên biệt và luôn miễn phí.</li>
+                    </ul>
+                </div>
+                <div class="home__block01__item">
+                    <h3 class="uk-h3 home__block01__title">TCANALYSIS</h3>
+                    <div class="home__block01__txt">Một cổng tin vạn doanh nghiệp</div>
+                    <ul class="uk-list home__block01__list">
+                        <li>Phân tích toàn diện và chuyên sâu cho hơn 1.350 công ty niêm yết.</li>
+                        <li>Hệ thống báo cáo 1 click đầy đủ và miễn phí.</li>
+                        <li>Công cụ Market Watch dõi theo mọi chuyển động thị trường và các ngành nghề.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="uk-width-auto@m">
+            <div class="uk-width-expand uk-text-center">
                 <img src="images/tcinvest_by_tcbs_2021-20210821131013.png" alt="">
             </div>
         </div>
     </div>
 </div>
-<!--/-->
+<!--/TCWEALTH-->
 
 <!--SẢN PHẨM ĐẦU TƯ-->
 <div class="home__blockSanpham uk-section uk-background-norepeat uk-background-top-left uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
