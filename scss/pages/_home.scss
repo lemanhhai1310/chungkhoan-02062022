@@ -5,10 +5,29 @@
     line-height: 1.6;
     color: #ffffff;
   }
+  
   &__blockSanpham{
     &__item{
       &:nth-child(n+2){
-        margin-top: 20px;
+        margin-top: 30px;
+      }
+    }
+    &__card{
+      border-radius: 5px;
+
+    }
+    &__title{
+      margin: 0;
+      color: rgb(33, 33, 33);
+      @extend .fz-30;
+      font-family: $font-Roboto;
+    }
+    &__txt{
+      color: rgb(33, 33, 33);
+      @extend .fz-17;
+      font-family: $font-Roboto;
+      &--c1{
+        @extend .fz-16;
       }
     }
   }
