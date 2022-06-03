@@ -5,6 +5,14 @@
     line-height: 1.6;
     color: #ffffff;
   }
+  &__blockThanhtich{
+    &__txt{
+      line-height: 1.4;
+      @extend .fz-17;
+      color: #ffffff;
+      font-family: $font-Roboto;
+    }
+  }
   &__block01{
     &__item{
       &:nth-child(n+2){

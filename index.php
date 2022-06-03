@@ -2,9 +2,40 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--THÀNH TÍCH NỔI BẬT-->
-<div class="uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
+<div class="home__blockThanhtich uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
     <div class="uk-container">
-
+        <div class="item__24">
+            <h3 class="uk-h3 uk-text-center uk-text-uppercase home__title">
+                THÀNH TÍCH NỔI BẬT <br class="uk-visible@m">
+                TẠI CHỨNG KHOÁN TECHCOMBANK
+            </h3>
+        </div>
+        <div class="item__24">
+            <p class="home__blockThanhtich__txt">Công ty cổ phần chứng khoán Techcombank (TCBS) đứng vị trí số 1 thị trường về lĩnh vực trái phiếu doanh nghiệp (TPDN). Trong 5 năm liên tiếp 2016 – 2020, thị phần giao dịch TPDN tại Sở giao dịch chứng khoán TP.HCM (HOSE) của TCBS luôn ở mức trên 65%.</p>
+            <p class="home__blockThanhtich__txt">Năm 2019, những chỉ số tài chính chủ lực chứng khoán Techcombank tiếp tục duy trì ở mức độ vững mạnh và an toàn cao. Tỷ suất lợi nhuận trên vốn chủ sở hữu (ROE) đạt mức 38%, tổng tái ản tăng 45%, biên lợi nhuận ròng giữ ở mức ổn định với tỷ lệ 67%, tỷ suất lợi nhuận sau thuế trên mỗi CBNV của chứng khoán Techcombank năm 2019 đạt mức 5,4 tỷ đồng/người, là các chỉ số cao nhất trong các công ty chứng khoán top đầu.</p>
+        </div>
+        <div class="item__24">
+            <div class="uk-child-width-auto uk-flex-center" uk-grid>
+                <div>
+                    <div class="uk-cover-container">
+                        <img src="images/tai-khoan-tcbs-20210821131716.png" alt="" uk-cover="">
+                        <canvas width="260" height="154"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-cover-container">
+                        <img src="images/thanh-tich-tcbs-20210821131909.png" alt="" uk-cover="">
+                        <canvas width="260" height="154"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-cover-container">
+                        <img src="images/thanh-tich-chung-khoan-tcbs-20210821131836.png" alt="" uk-cover="">
+                        <canvas width="260" height="154"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--/THÀNH TÍCH NỔI BẬT-->
