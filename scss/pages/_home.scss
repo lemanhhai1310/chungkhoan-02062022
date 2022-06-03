@@ -5,6 +5,54 @@
     line-height: 1.6;
     color: #ffffff;
   }
+  &__blockGioithieu{
+    $x:130px;
+    &__boximg{
+      height: 155px;
+      text-align: center;
+      margin-top: calc(0px - #{$x});
+      margin-bottom: 20px;
+      img{
+
+      }
+    }
+    &__card{
+      margin-top: calc(#{$x} - 40px);
+      &__txt{
+        color: rgb(33, 33, 33);
+        @extend .fz-15;
+        font-family: $font-Roboto;
+        line-height: 1.4;
+      }
+    }
+    &__title{
+      @extend .fz-34;
+      font-family: $font-Roboto-Bold;
+      line-height: 1.4;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      padding-bottom: 20px;
+      &:before{
+        content: "";
+        width: 300px;
+        height: 1px;
+        background-color: #fff;
+        display: flex;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    }
+    &__txt{
+      @extend .fz-20;
+      line-height: 1.4;
+      font-family: $font-Roboto;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
   &__blockThanhtich{
     &__txt{
       line-height: 1.4;

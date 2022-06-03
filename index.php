@@ -1,6 +1,52 @@
-<?php $data["title"] = "Trang chủ"; ?>
+<?php $data["title"] = "Chứng Khoán Techcombank, Công Ty CP Chứng Khoán Kỹ Thương"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!--GIỚI THIỆU-->
+<div class="home__blockGioithieu uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
+    <div class="uk-container">
+        <div class="item__30">
+            <h1 class="uk-h1 home__blockGioithieu__title">
+                GIỚI THIỆU <br class="uk-visible@m">
+                CHỨNG KHOÁN TECHCOMBANK
+            </h1>
+            <p class="home__blockGioithieu__txt">Chứng khoán Techcombank là công ty chứng khoán uy tín hàng đầu tại Việt Nam. Trong lĩnh vực trái phiếu doanh nghiệp, chứng khoán Techcombank luôn duy trì vị trí số 1 với hơn 213.322 tỉ đồng trái phiếu được tư vấn phát hành trong giai đoạn 2014-2019 và phân phối cho các nhà đầu tư đa dạng. Năng lực vượt trội trong mảng nghiệp vụ này của chứng khoán Techcombank đã được những tổ chức xếp hạng quốc tế danh tiếng công nhận.</p>
+        </div>
+        <div class="item__30">
+            <div class="uk-grid uk-child-width-1-3@m uk-grid-match" uk-grid>
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/chung-khoan-tot-nhat-20210821122458.png',
+                        'txt' => 'Nhà thu xếp chứng khoán nợ tốt nhất Việt Nam năm 2016 và nhà tư vấn trái phiếu tốt nhất Việt Nam năm 2018 - 2019',
+                    ),
+                    array(
+                        'src' => 'images/southestasia-20210821122544.png',
+                        'txt' => 'Chứng khoán Techcombank đạt giải thưởng nhà tư vấn trái phiếu tốt nhất Việt Nam (2007 – 2019)',
+                    ),
+                    array(
+                        'src' => 'images/1524656786aaa2018logo-20210821122608.jpeg',
+                        'txt' => 'Chứng khoán Techcombank đạt giải thưởng nhà tư vấn trái phiếu tốt nhất Việt Nam năm 2018 - 2019',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <div>
+                    <div class="home__blockGioithieu__card uk-card uk-card-body uk-card-default uk-border-rounded">
+                        <div class="home__blockGioithieu__boximg">
+                            <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="">
+                        </div>
+                        <div class="home__blockGioithieu__card__txt"><?= $v['txt'] ?></div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="item__30 uk-text-center">
+            <a target="_blank" href="https://tcinvest.tcbs.com.vn/guest/login?openAccount=true&IWPCode=105C988916" class="home__blockChuongtrinh__btn uk-button uk-button-default">ĐĂNG KÝ MỞ TÀI KHOẢN CHỨNG KHOÁN</a>
+        </div>
+    </div>
+</div>
+<!--/GIỚI THIỆU-->
+
 <!--THÀNH TÍCH NỔI BẬT-->
 <div class="home__blockThanhtich uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
     <div class="uk-container">
