@@ -4,6 +4,9 @@
     font-family: $font-OpenSans-Bold;
     line-height: 1.6;
     color: #ffffff;
+    .huongdan__motaikhoan &{
+      @extend .fz-34;
+    }
   }
   &__blockGioithieu{
     $x:130px;

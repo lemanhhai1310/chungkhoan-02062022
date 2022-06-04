@@ -1,0 +1,72 @@
+.huongdan{
+  &__motaikhoan{
+    &__txt{
+      background-color: rgb(241, 14, 1);
+      @extend .fz-21;
+      color: #ffffff;
+      font-family: $font-OpenSans-Bold;
+      font-style: italic;
+      display: inline-block;
+      padding: 0 6px;
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 30px;
+      }
+    }
+    &__card{
+      min-height: 100px;
+      color: rgb(84, 84, 84);
+      @extend .fz-15;
+      font-family: $font-OpenSans-Regular;
+    }
+  }
+  &__step{
+    @extend .fz-18;
+    font-family: $font-OpenSans-Bold;
+    color: #ffffff;
+    position: relative;
+    @include media-breakpoint-up('m'){
+      padding-left: 45px;
+    }
+    &:before{
+      @include media-breakpoint-up('m'){
+        content: "";
+        width: 43px;
+        height: 39px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' %5Bremoved%5D='' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25' viewBox='0 0 24 24' fill='rgba(255, 255, 255, 1)'%3E%3Cpath d='M18,16H6V15.1C6,13.1 10,12 12,12C14,12 18,13.1 18,15.1M12,5.3C13.5,5.3 14.7,6.5 14.7,8C14.7,9.5 13.5,10.7 12,10.7C10.5,10.7 9.3,9.5 9.3,8C9.3,6.5 10.5,5.3 12,5.3M19,2H5C3.89,2 3,2.89 3,4V18A2,2 0 0,0 5,20H9L12,23L15,20H19A2,2 0 0,0 21,18V4C21,2.89 20.1,2 19,2Z'%3E%3C/path%3E%3C/svg%3E");
+      }
+    }
+  }
+  &__title{
+    color: rgb(241, 14, 1);
+    @extend .fz-22;
+    font-family: $font-OpenSans-Bold;
+    line-height: 1.6;
+  }
+  &__boximg{
+    height: 122px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__card{
+    &__title{
+      color: rgb(241, 14, 1);
+      @extend .fz-18;
+      font-family: $font-OpenSans-Bold;
+      line-height: 1.2;
+      margin: 0;
+    }
+    &__desc{
+      color: rgb(64, 64, 64);
+      @extend .fz-14;
+    }
+  }
+}
