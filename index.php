@@ -1,5 +1,5 @@
-<?php $data["title"] = "Chứng Khoán Techcombank, Công Ty CP Chứng Khoán Kỹ Thương"; ?>
 <?php $body = '' ?>
+<?php $page = 'home' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--GIỚI THIỆU-->
 <div class="home__blockGioithieu uk-light uk-section uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
@@ -32,7 +32,7 @@
                 <div>
                     <div class="home__blockGioithieu__card uk-card uk-card-body uk-card-default uk-border-rounded">
                         <div class="home__blockGioithieu__boximg">
-                            <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="">
+                            <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="<?= $v['txt'] ?>">
                         </div>
                         <div class="home__blockGioithieu__card__txt"><?= $v['txt'] ?></div>
                     </div>

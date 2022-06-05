@@ -10,8 +10,59 @@
       padding: 0 6px;
     }
     &__item{
+      position: relative;
+      &:before,&:after{
+        content: "";
+      }
+      &:before{
+
+      }
+      &:after{
+
+      }
       &:nth-child(n+2){
         margin-top: 30px;
+      }
+    }
+    &__box{
+      width: 49px;
+      height: 49px;
+      display: flex;
+      position: relative;
+      &:before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 22;
+        .huongdan__motaikhoan__item:last-child &{
+          width: 49px;
+          height: 49px;
+          background-color: rgb(10, 103, 233);
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' preserveAspectRatio='none' viewBox='0 0 1792 1896.0833' fill='rgba(255, 255, 255, 1)'%3E%3Cpath d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'%3E%3C/path%3E%3C/svg%3E");
+          background-size: 60%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      &:after{
+        .huongdan__motaikhoan__item:nth-child(n+2) &{
+          content: "";
+          width: 10px;
+          height: 102px;
+          display: flex;
+          background-color: #fff;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: calc(100% - 10px);
+        }
       }
     }
     &__card{
@@ -19,6 +70,24 @@
       color: rgb(84, 84, 84);
       @extend .fz-15;
       font-family: $font-OpenSans-Regular;
+      position: relative;
+      &:before{
+        content: "";
+        //width: 20px;
+        //height: 20px;
+        //border-radius: 50%;
+        //background-color: #fff;
+        //display: block;
+        //position: absolute;
+        //top: 50%;
+        //transform: translateY(-50%);
+        //right: calc(100% + 35px);
+        .huongdan__motaikhoan__item:last-child &{
+          //width: 49px;
+          //height: 49px;
+          //background-color: rgb(10, 103, 233);
+        }
+      }
     }
   }
   &__step{
@@ -27,21 +96,21 @@
     color: #ffffff;
     position: relative;
     @include media-breakpoint-up('m'){
-      padding-left: 45px;
+      padding-left: 50px;
     }
     &:before{
       @include media-breakpoint-up('m'){
         content: "";
-        width: 43px;
+        width: 44px;
         height: 39px;
         position: absolute;
         top: 0;
         left: 0;
-        display: flex;
+        display: block;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' %5Bremoved%5D='' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25' viewBox='0 0 24 24' fill='rgba(255, 255, 255, 1)'%3E%3Cpath d='M18,16H6V15.1C6,13.1 10,12 12,12C14,12 18,13.1 18,15.1M12,5.3C13.5,5.3 14.7,6.5 14.7,8C14.7,9.5 13.5,10.7 12,10.7C10.5,10.7 9.3,9.5 9.3,8C9.3,6.5 10.5,5.3 12,5.3M19,2H5C3.89,2 3,2.89 3,4V18A2,2 0 0,0 5,20H9L12,23L15,20H19A2,2 0 0,0 21,18V4C21,2.89 20.1,2 19,2Z'%3E%3C/path%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M18,16H6V15.1C6,13.1 10,12 12,12C14,12 18,13.1 18,15.1M12,5.3C13.5,5.3 14.7,6.5 14.7,8C14.7,9.5 13.5,10.7 12,10.7C10.5,10.7 9.3,9.5 9.3,8C9.3,6.5 10.5,5.3 12,5.3M19,2H5C3.89,2 3,2.89 3,4V18A2,2 0 0,0 5,20H9L12,23L15,20H19A2,2 0 0,0 21,18V4C21,2.89 20.1,2 19,2Z'%3E%3C/path%3E%3C/svg%3E");
       }
     }
   }

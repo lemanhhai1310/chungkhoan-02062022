@@ -1,5 +1,5 @@
-<?php $data["title"] = "Hướng Dẫn Mở Tài Khoản Chứng Khoán Techcombank Mới Nhất"; ?>
 <?php $body = '' ?>
+<?php $page = 'huongdan' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
 <div class="huongdan__motaikhoan uk-height-viewport uk-flex uk-flex-middle uk-background-norepeat uk-background-top-center uk-background-cover" data-src="images/capture-recovered-20220421114429.jpeg" uk-img>
@@ -17,12 +17,13 @@
             <div class="item__24">
                 <div class="uk-grid uk-flex-bottom" uk-grid>
                     <div class="uk-width-2-5@m">
-                        <img src="images/mo-tai-khoan-tcbs-20220421140736.png" alt="">
+                        <img uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true" src="images/mo-tai-khoan-tcbs-20220421140736.png" alt="HƯỚNG DẪN MỞ TÀI KHOẢN
+CHỨNG KHOÁN TECHCOMBANK">
                     </div>
-                    <div class="uk-width-expand">
+                    <div class="uk-width-expand" uk-scrollspy="cls: animate; target: .anima; delay: 200; repeat: true">
                         <?php for ($i=1;$i<=5;$i++): ?>
-                        <div class="huongdan__motaikhoan__item">
-                            <div class="uk-flex-middle uk-grid-large" uk-grid>
+                        <div class="huongdan__motaikhoan__item anima">
+                            <div class="uk-flex-middle" uk-grid>
                                 <div class="uk-width-1-3">
                                     <div class="huongdan__step">
                                         <?php if ($i==1): ?>
@@ -45,6 +46,9 @@
                                             Bước 5: Ký hợp đồng điện tử
                                         <?php endif; ?>
                                     </div>
+                                </div>
+                                <div class="uk-width-auto uk-visible@m">
+                                    <div class="huongdan__motaikhoan__box"></div>
                                 </div>
                                 <div class="uk-width-expand">
                                     <div class="huongdan__motaikhoan__card uk-card uk-card-default uk-padding-small">
@@ -97,7 +101,8 @@
         <div class="home__blockChuongtrinh__item">
             <div class="uk-flex-middle uk-flex-center uk-child-width-auto@m" uk-grid>
                 <div>
-                    <img style="width: 418px" src="images/big-icon12x-20211217163600.png" alt="">
+                    <img style="width: 418px" src="images/big-icon12x-20211217163600.png" alt="CHƯƠNG TRÌNH ƯU ĐÃI
+KHI MỞ MỚI TÀI KHOẢN CHỨNG KHOÁN TECHCOMBANK">
                 </div>
                 <div>
                     <ul class="uk-list home__blockChuongtrinh__list">
@@ -148,7 +153,7 @@
                     <div class="huongdan__card uk-card uk-card-default uk-card-body uk-border-rounded uk-flex uk-flex-column">
                         <div class="uk-flex-auto item__10">
                             <div class="huongdan__boximg">
-                                <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="">
+                                <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="<?= $v['title'] ?>">
                             </div>
                             <h3 class="uk-h3 huongdan__card__title"><?= $v['title'] ?></h3>
                         </div>
